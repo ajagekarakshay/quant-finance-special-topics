@@ -10,12 +10,18 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Home", link: "/" },
-      { text: "Probability & Stats", link: "/prob-stats/essentials/series.md" },
+      { text: "Home", link: "/index.md" },
+      {
+        text: "Probability & Stats",
+        link: "/prob-stats/essentials/series.md",
+      },
     ],
 
     sidebar: {
-      "/prob-stats/": { base: "/prob-stats/", items: sidebarProbStats() },
+      "/prob-stats/": {
+        base: "/prob-stats/",
+        items: sidebarProbStats(),
+      },
       "/ml/": { base: "/ml/", items: sidebarML() },
     },
 
@@ -34,11 +40,11 @@ function sidebarProbStats(): DefaultTheme.SidebarItem[] {
       text: "Essentials",
       collapsed: false,
       items: [
-        { text: "Series", link: "essentials/series.md" },
-        { text: "Linear Algebra", link: "essentials/linalg.md" },
+        { text: "Series", link: "essentials/1_series.md" },
+        { text: "Linear Algebra", link: "essentials/2_linalg.md" },
         {
           text: "Vector calculus",
-          link: "essentials/vectorcalc.md",
+          link: "essentials/3_vectorcalc.md",
         },
       ],
     },
@@ -46,8 +52,21 @@ function sidebarProbStats(): DefaultTheme.SidebarItem[] {
       text: "Probability",
       collapsed: false,
       items: [
-        { text: "Theory", link: "prob/theory.md" },
-        { text: "Random variables", link: "prob/random.md" },
+        { text: "Theory", link: "prob/1_theory.md" },
+        { text: "Random variables", link: "prob/2_random.md" },
+        { text: "Characteristic functions", link: "prob/3_characteristic.md" },
+        { text: "Transformations", link: "prob/4_transformation.md" },
+      ],
+    },
+    {
+      text: "Stochastic calculus",
+      collapsed: false,
+      items: [
+        { text: "Markov chains", link: "stochastic/1_markov.md" },
+        {
+          text: "Martingale & Random walk",
+          link: "stochastic/2_martingale.md",
+        },
       ],
     },
   ];

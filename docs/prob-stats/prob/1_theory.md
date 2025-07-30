@@ -32,3 +32,12 @@ $$
 \frac{P(A_i|B)}{P(A_{i}^c|B)} = \frac{P(B|A_i)}{P(B|A_{i}^c)} \cdot \frac{P(A_i)}{P(A_{i}^c)}
 $$
 :::
+
+## Survival Probability
+The survival probability is the probability that a random variable $X$ is greater than a certain value $x$, denoted as $P(X > x)$.
+
+## Expected Value
+The expected value of a function $g(X)$ over a random variable $X \sim f_X$ is defined as:
+$$
+E[g(X)] = \int_{-\infty}^{\infty} g(x) \cdot f_X(x) \, dx
+$$
