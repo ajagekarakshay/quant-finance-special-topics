@@ -1,0 +1,28 @@
+{
+  "name": "quant-finance-special-topics",
+  "version": "1.0.0",
+  "description": "Quantitative Finance Special Topics Documentation",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "vitepress": "^1.6.3",
+    "vue": "^3.5.13",
+    "markdown-it-mathjax3": "^4.3.2"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "type": "module",
+  "keywords": [
+    "quantitative-finance",
+    "documentation",
+    "vitepress",
+    "finance"
+  ],
+  "author": "",
+  "license": "MIT"
+}
