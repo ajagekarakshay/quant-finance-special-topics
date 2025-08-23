@@ -57,3 +57,5 @@ build/
 out/
 node_modules/
 .vitepress/cache/
+bun.lockb
+bun.lock
